@@ -78,10 +78,16 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',              # Database name
+        'USER': 'postgres',              # Database user
+        'PASSWORD': 'XIxNNJQAaLTuIrwsDowaJQkjaXLXtyVi',  # Database password
+        'HOST': 'autorack.proxy.rlwy.net',  # Database host
+        'PORT': '30473',                 # Non-standard port provided by Railway
     }
 }
+
+
 
 
 # Password validation
@@ -129,4 +135,4 @@ LOGIN_URL = 'login'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = os.path.join(BASE_DIR,'pictures')
 MEDIA_URL = '/pictures/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
