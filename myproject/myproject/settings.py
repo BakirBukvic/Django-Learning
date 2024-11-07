@@ -136,4 +136,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = os.path.join(BASE_DIR,'pictures')
 MEDIA_URL = '/pictures/'
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-CSRF_TRUSTED_ORIGINS = ['https://django-learning-production.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = ["https://*.railway.app"]
+
+
+
